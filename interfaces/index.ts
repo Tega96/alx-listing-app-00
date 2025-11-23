@@ -19,3 +19,7 @@ export interface PropertyProps {
     image: string;
     discount?: string;
 }
+
+export interface ButtonProps {
+    text: string;
+}
