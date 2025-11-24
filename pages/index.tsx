@@ -1,6 +1,6 @@
 import Card from '@/components/common/Card'
 import Image from 'next/image';
-
+import { PROPERTYLISTINGSAMPLE } from '@/constants';
 
 
 const Home: React.FC = () => {
@@ -23,8 +23,26 @@ const Home: React.FC = () => {
           filter search
         </div>
       </div>
-      <div className="grid grid-cols-4 ">
-        <Card />
+      <div className="grid grid-cols-4 w-[1607.23] mt-[35px] gap-[31px]">
+        {
+          PROPERTYLISTINGSAMPLE.map(p => (
+            <Card 
+              name={p.name}
+              state={p.address.state}
+              city={p.address.city}
+              country={p.address.country}
+              rating={p.rating}
+              category={p.category}
+              price={p.price}
+              bed={p.offers.bed}
+              shower={p.offers.shower}
+              occupants={p.offers.occupants}
+              image={p.image}
+              discount={p.discount}
+            />
+          ))
+
+        }
       </div>
     </div>
   )

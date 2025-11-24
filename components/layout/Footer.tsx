@@ -21,9 +21,9 @@ const Footer: React.FC = () => {
                         <h3 className="text-[#CACACA] font-semibold text-[25px] font-Quicksand ">Explore</h3>
                         <ul className="flex flex-col gap-[9px] w-[157px] h-[157px]">
                             <Link href="#" className="font-medium text-[16px] text-[#cacaca] ">Apartment in Dubai</Link>
-                            <Link href="#" className="font-medium text-[16px] text-[#cacaca] ">Apartment in Dubai</Link>
-                            <Link href="#" className="font-medium text-[16px] text-[#cacaca] ">Apartment in Dubai</Link>
-                            <Link href="#" className="font-medium text-[16px] text-[#cacaca] ">Apartment in Dubai</Link>
+                            <Link href="#" className="font-medium text-[16px] text-[#cacaca] ">Hotels in New York</Link>
+                            <Link href="#" className="font-medium text-[16px] text-[#cacaca] ">Villa in Spain</Link>
+                            <Link href="#" className="font-medium text-[16px] text-[#cacaca] ">Mansion in Indonesia</Link>
                         </ul>
                     </nav>
                     <nav className="flex flex-col w-[157px] h-[187px] gap-[30px]">
@@ -46,7 +46,10 @@ const Footer: React.FC = () => {
                     </nav>
                 </div>
             </div>
-            <hr className="flex justify-center w-[1608px] h-[0px]  mt-[30.5px] text-white" />
+            <div className="flex justify-center">
+                <hr className=" w-[1608px] h-[0px]  mt-[30.5px] text-white" />
+                div.
+            </div>
         </footer>
     )
 }
