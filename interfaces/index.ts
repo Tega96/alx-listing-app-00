@@ -28,3 +28,6 @@ export interface PropertyNavProps {
     image: string;
     url: string;
 }
+export interface PillProps {
+    text: string;
+}

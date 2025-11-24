@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-blue-400">
+    <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col items-center bg-[url('/assets/images/hero.png')] rounded-xl bg-cover w-[1608px] h-[481px] mt-[35px] ">
         <div className="w-[867px] h-[198px] mt-[82px]">
           <h2 className="text-white font-mono font-semibold text-[87px] text-center leading-none">Find your favorite place here</h2>
@@ -15,7 +15,17 @@ const Home: React.FC = () => {
         </div>
           
       </div>
-      <Card />
+      <div className="flex justify-between items-">
+        <div className="">
+          links
+        </div>
+        <div>
+          filter search
+        </div>
+      </div>
+      <div className="grid grid-cols-4 ">
+        <Card />
+      </div>
     </div>
   )
 }
