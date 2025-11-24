@@ -23,3 +23,8 @@ export interface PropertyProps {
 export interface ButtonProps {
     text: string;
 }
+export interface PropertyNavProps {
+    name: string;
+    image: string;
+    url: string;
+}

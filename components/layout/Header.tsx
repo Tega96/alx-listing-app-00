@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Briefcase from '@/public/assets/icons/work.svg'
 import Button from '@/components/common/Button'
 import Logo from '@/public/assets/icons/logo-black.png'
+import { PropertyNav } from '@/constants'
+
 
 
 const Header: React.FC = () => {
@@ -16,7 +18,7 @@ const Header: React.FC = () => {
                     />
                 </div>
             </div>
-            <div className="flex justify-between items-center bg-red-500 w-full h-[88px] border-y-1 border-[#ebebeb]">
+            <div className="flex justify-between items-center bg-white w-full h-[88px] border-y-1 border-[#ebebeb]">
                 <div className="w-[58px] h-[30px] my-[28px] mx-[59.55px]">
                     <Image src={Logo} alt="Logo" />
                 </div>
@@ -28,10 +30,18 @@ const Header: React.FC = () => {
                     <Button text='Sign up' />
                 </div>
             </div>
-            <div className="flex justify-between items-center bg-green-500 h-[84px] w-full ">
-                
+            <div className="flex justify-center items-center bg-white h-[84px] w-full ">
+                <div className="flex justify-center items-center border-y-1 border-[#FDFDFD] bg-white w-[1727px] h-[84px] gap-[43px] ">
+                    {
+                        PropertyNav.map(p => (
+                            <div className="flex flex-col justify-center items-center h-88px w-auto py-[17px] gap-[5px]">
+                                <Image src={p.image} alt={p.name} className="w-[34px] h-[34px]"/>
+                                <p className="font-monospace font-500 text-[12px] text=[#616161]">{p.name}</p>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
-            Header File
         </header>
     )
 }

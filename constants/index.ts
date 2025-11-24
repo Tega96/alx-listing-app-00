@@ -1,5 +1,47 @@
 import { PropertyProps } from "@/interfaces";
+import { PropertyNavProps } from "@/interfaces";
+import Rooms from '@/public/assets/icons/living-room.svg'
+import Mansion from '@/public/assets/icons/mansion.svg'
+import Villa from '@/public/assets/icons/villa.svg'
+import Tropical from '@/public/assets/icons/palm-tree.svg'
+import New from '@/public/assets/icons/key-chain.svg'
+import Pool from '@/public/assets/icons/swimming-pool.svg'
+import Beach from '@/public/assets/icons/tent.svg'
+import Island from '@/public/assets/icons/island.svg'
+import Camping from '@/public/assets/icons/tent.svg'
+import Apartment from '@/public/assets/icons/apartment.svg'
+import House from '@/public/assets/icons/home.svg'
+import Lakefront from '@/public/assets/icons/vacations.svg'
+import Farm from '@/public/assets/icons/farm.svg'
+import TreeHouse from '@/public/assets/icons/home.svg'
+import Cabin from '@/public/assets/icons/cabin.svg'
+import Castle from '@/public/assets/icons/castle-tower.svg'
+import Barn from '@/public/assets/icons/barn.svg'
+import Cottage from '@/public/assets/icons/cottage.svg'
+import Vacation from '@/public/assets/icons/vacations.svg'
 
+
+export const PropertyNav: PropertyNavProps[] = [
+  {name: 'Rooms', image: Rooms , url: ""},
+  {name: 'Mansion', image:Mansion , url:''},
+  {name: 'Villa', image: Villa, url:''},
+  {name: 'Tropical', image: Tropical, url:''},
+  {name: 'New', image: New, url:''},
+  {name: 'Pool', image: Pool, url:''},
+  {name: 'Beach', image: Beach, url:''},
+  {name: 'Island', image: Island, url:''},
+  {name: 'Camping', image: Camping, url:''},
+  {name: 'Apartment', image: Apartment, url:''},
+  {name: 'House', image: House, url:''},
+  {name: 'Lakefront', image: Lakefront, url:''},
+  {name: 'Farm', image: Farm, url:''},
+  {name: 'TreeHouse', image: TreeHouse, url:''},
+  {name: 'Cabin', image: Cabin, url:''},
+  {name: 'Castle', image: Castle, url:''},
+  {name: 'Barn', image: Barn, url:''},
+  {name: 'Cottage', image: Cottage, url:''},
+  {name: 'Vacation', image: Vacation, url:''},
+]
 
 
 export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
