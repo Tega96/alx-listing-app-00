@@ -1,9 +1,9 @@
 import Card from '@/components/common/Card'
 import Image from 'next/image';
 import { PROPERTYLISTINGSAMPLE } from '@/constants';
+import { PropertyProps } from '@/interfaces';
 
-
-const Home: React.FC = () => {
+const Home: React.FC<PropertyProps> = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col items-center bg-[url('/assets/images/hero.png')] rounded-xl bg-cover w-[1608px] h-[481px] mt-[35px] ">

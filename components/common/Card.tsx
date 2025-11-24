@@ -28,7 +28,7 @@ const Card: React.FC<PropertyProps> = ({ name, state, city, country, rating, cat
                     <p className="font-medium text-[17px] leading-loose tracking-tighter">{rating}</p>
                 </div>
             </div>
-            <div className="flex justify-between w-[378.56px] h-[37px]">
+            <div className="flex justify-between w-[390.56px] h-[37px]">
                 <div className="grid grid-cols-3 w-[156px] h-[37px] rounded-full border py-[8.68px] px-[20.84px] gap-[11.29px]">
                     <div className="flex gap-[6.82px] w-[34.58px] h-[19.76px]">
                         <Image src={Bed} alt="bed" />
